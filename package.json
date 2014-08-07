@@ -1,0 +1,31 @@
+{
+    "name": "webgl-assets",
+    "version": "0.0.2",
+    "description": "Assets for webgl renderer",
+    "main": "",
+    "dependencies": {},
+    "devDependencies": {
+        "gulp": "^3.8.6",
+        "run-sequence": "^0.3.6",
+        "gulp-concat": "^2.3.4",
+        "gulp-sourcemaps": "^1.1.0",
+        "gulp-bump": "^0.1.6",
+        "gulp-rimraf": "latest",
+        "gulp-exec": "^1.0.4",
+        "q": "^1.0.0",
+        "request": "^2.34.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DressformerInc/webgl-assets.git"
+    },
+    "author": "Miha-ha",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DressformerInc/webgl-assets/issues"
+    },
+    "homepage": "https://github.com/DressformerInc/webgl-assets"
+}
