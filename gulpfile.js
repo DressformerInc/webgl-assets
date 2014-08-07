@@ -18,7 +18,7 @@ var gulp = require('gulp'),
  */
 
 gulp.task('rimraf', function () {
-    return gulp.src(['dist/*', 'release.zip'], { read: false })
+    return gulp.src(['release.zip'], { read: false })
         .pipe(rimraf());
 });
 
