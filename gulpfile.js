@@ -40,7 +40,6 @@ gulp.task('git', function () {
         .pipe(exec('git commit -am "<%=options.msg%>"', options))
         .pipe(exec('git tag -a <%=options.v%> -m "<%=options.msg%>"', options))
         .pipe(exec('git push origin --follow-tags')); //отправляю изменения и тэги вместе
-//        .pipe(exec('git push origin --tags'));
 });
 
 gulp.task('zip', function () {
@@ -62,7 +61,7 @@ gulp.task('deploy-release', function () {
 
 gulp.task('log', function () {
     return gulp.src('').pipe(
-        exec('ssh deploy@192.168.10.10 tail site-v2.log', {silent: false})
+        exec('ssh deploy@95.163.87.227 tail webgl-assets.log', {silent: false})
     );
 });
 
