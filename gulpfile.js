@@ -49,7 +49,7 @@ gulp.task('zip', function () {
     }));
 });
 
-gulp.task('deploy-release', function () {
+gulp.task('deploy-test', function () {
     var v = require('./package.json').version;
 
     return gulp.src('').pipe(
@@ -75,7 +75,7 @@ gulp.task('release', function (cb) {
         'git',
         'zip',
         'github-release',
-        'deploy-release',
+        'deploy-test',
         'rimraf',
         cb);
 });
