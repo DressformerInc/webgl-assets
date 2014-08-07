@@ -50,21 +50,11 @@ gulp.task('zip', function () {
     }));
 });
 
-gulp.task('deploy-test', function () {
-    var v = require('./package.json').version;
-
-    return gulp.src('').pipe(
-        exec('ssh deploy@192.168.10.10 site-v2 test v' + v, {
-            silent: false,
-            continueOnError: false
-        }));
-});
-
 gulp.task('deploy-release', function () {
     var v = require('./package.json').version;
 
     return gulp.src('').pipe(
-        exec('ssh deploy@192.168.10.10 site-v2 deploy v' + v, {
+        exec('ssh deploy@95.163.87.227 test webgl-assets v' + v, {
             silent: false,
             continueOnError: false
         }));
@@ -86,8 +76,7 @@ gulp.task('release', function (cb) {
         'git',
         'zip',
         'github-release',
-//        'deploy-test',
-//        'deploy-release',
-//        'rimraf',
+        'deploy-release',
+        'rimraf',
         cb);
 });
