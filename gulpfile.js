@@ -43,7 +43,7 @@ gulp.task('git', function () {
 //        .pipe(exec('git push origin --tags'));
 });
 
-gulp.task('zip', ['dist'], function () {
+gulp.task('zip', function () {
     return gulp.src('').pipe(exec('cd dist && zip -r ../release.zip ./ && cd ..', {
         silent: true,
         continueOnError: true
