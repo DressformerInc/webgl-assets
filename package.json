@@ -1,6 +1,6 @@
 {
     "name": "webgl-assets",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "Assets for webgl renderer",
     "main": "",
     "dependencies": {},
